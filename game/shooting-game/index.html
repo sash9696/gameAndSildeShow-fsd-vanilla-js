@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Multiplayer Shooting Game</h1>
+      <button id="start-button">Start Game</button>
+    </header>
+
+    <div id="game-container-start" class="game-container">
+      <h1>Round: <span id="game-round">0</span></h1>
+      <div class="player-container">
+        <span id="player-one-percent">100%</span>
+        <progress id="player-one-progress" value="100" max="100"></progress>
+        <h2>Player 1</h2>
+        <h3>Power = <span id="player-one-power"></span></h3>
+        <button id="player-one-shoot" type="submit" class="game-button">
+          Shoot
+        </button>
+        <p>Score: <span id="player-one-score"></span></p>
+      </div>
+      <div class="player-container">
+        <span id="player-two-percent">100%</span>
+        <progress id="player-two-progress" value="100" max="100"></progress>
+        <h2>Player 2</h2>
+        <h3>Power = <span id="player-two-power"></span></h3>
+        <button id="player-two-shoot" type="submit" class="game-button">
+          Shoot
+        </button>
+        <p>Score: <span id="player-two-score"></span></p>
+      </div>
+      <div class="end-game">
+        <button id="end-button">Game Ended</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
